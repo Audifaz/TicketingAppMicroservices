@@ -1,8 +1,7 @@
 import express, {Request,Response} from 'express';
 import { body} from 'express-validator';
 import { User } from '../models/user';
-import { validateRequest } from '../middlewares/validate-request';
-import { BadRequestError } from '../errors/bad-request-error';
+import { validateRequest, BadRequestError } from '@audifaztickets/common';
 import { Password } from '../util/password';
 import jwt from 'jsonwebtoken';
 
