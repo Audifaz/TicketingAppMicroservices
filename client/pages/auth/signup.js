@@ -2,7 +2,7 @@ import {useState} from 'react';
 import Router from 'next/router';
 import useRequest from '../../hooks/use-request';
 
-export default () => {
+const signUpPage = () => {
     const [email,setEmail] = useState('');
     const [password, setPassword] = useState('');
     const {doRequest,errors} = useRequest({
@@ -36,3 +36,5 @@ export default () => {
         <button className="btn btn-primary">Sign Up</button>
     </form>);
 };
+
+export default signUpPage;
